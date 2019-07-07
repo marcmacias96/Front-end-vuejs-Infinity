@@ -2,6 +2,9 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <div v-for="image in getImages" :key="image.id">
+       {{image.title}}
+     </div>
   </div>
 </template>
 
@@ -20,7 +23,7 @@ export default {
     }
   },
   apollo : {
-    me : gql `query {
+    getImages : gql `query {
       getImages {
                     title
                   }
