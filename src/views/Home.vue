@@ -21,9 +21,9 @@ export default {
   },
   apollo : {
     me : gql `query {
-      getUsers {
-        name
-      }
+      getImages {
+                    title
+                  }
     }`
   }
 }
