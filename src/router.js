@@ -23,7 +23,7 @@ export default new Router({
                 import ( /* webpackChunkName: "about" */ './views/Index.vue')
         },
         {
-            path: '/viewImage:/id',
+            path: '/viewImage/:id',
             name: 'viewImage',
             component: () =>
                 import ( /* webpackChunkName: "about" */ './views/ViewImage.vue')

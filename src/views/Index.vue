@@ -1,5 +1,6 @@
 <template >
-  <div class="card">
+ <div class="container p-5">
+    <div class="card">
     <div class="card-header bg-dark">
       <h3 class="card-title text-white">
         <i class="far fa-image"></i> Upload an Image
@@ -63,15 +64,17 @@
           <div class="row">
             <div class="col-md-4" :key="image.id"   v-for="image in getImages">
                    
-              <router-link to="{name : 'viewImage', params: { id : image.uniqueId }}">
+              <router-link :to="{name : 'viewImage', params: { id : image._id }}">
                 <img :src="url + image.fileName" alt=" " class="w-100 h-100 img-thumbnail">   
               </router-link> 
-
+                
+                
             </div>
            </div> 
       </div>
     </div>
   </div>
+ </div>
 </template>
 
 <script>
@@ -82,7 +85,7 @@ export default {
       title: "",
       description: "",
       file: "",
-      url : "http://localhost:3000/static/upload/"
+      url : "http://localhost:3000/static/upload/",
     };
   },
   methods: {
@@ -90,7 +93,7 @@ export default {
       this.file = this.$refs.file.files[0];
     },
     cretaImage() {
-      this.$apollo.mutate({
+       this.$apollo.mutate({
         mutation: gql`
           mutation($input: ImageInput!, $usr_id: ID!) {
             createImage(input: $input, usr_id: $usr_id) {
@@ -104,22 +107,24 @@ export default {
             description: this.description,
             file: this.file
           },
-          usr_id: "5d216b1f0e96d74060569b8e"
+          usr_id: "5d22b0d15e51c91724684448"
         },
         context: {
           hasUpload: true
         }
       });
+      this.$router.push('/index')
     }
   },
   apollo: {
     getImages: gql`
       query {
         getImages {
+          _id
           title
           description
           fileName
-          
+          uniqueId
         }
       }
     `

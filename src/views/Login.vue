@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container p-5">
         <form action="" method="POST" @submit.prevent="login">
             <div class="form-group">
                 <input class="form-control" type="email" v-model="email" name="email" id="email" placeholder="Email">
