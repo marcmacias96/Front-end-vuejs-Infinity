@@ -46,7 +46,7 @@ export default {
             // Result
             console.log(data)
             //onLogin(this.$apollo.provider.defaultClient, data.data.login.token)
-            this.$router.push('./Index.vue')
+            this.$router.push('./Index')
             }).catch((error) => {
             console.error(error)
             console.log();
