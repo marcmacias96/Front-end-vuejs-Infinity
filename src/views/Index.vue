@@ -123,7 +123,7 @@ export default {
             return {
                getImages : [
                   ...previousResult.getImages,
-                  mutationResult.data.photos
+                  mutationResult. data.photos
                ]
              }
           }
@@ -152,7 +152,7 @@ export default {
           document : SUB_QUERY,
           updateQuery : (previousResult, { subscriptionData }) => {
             
-            //this.$router.push({ name : 'viewImage', params: {id: subscriptionData.data.photos._id }})
+            this.$router.push({ name : 'viewImage', params: {id: subscriptionData.data.photos._id }})
              return {
                getImages : [
                   ...previousResult.getImages,
