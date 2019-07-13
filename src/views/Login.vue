@@ -45,7 +45,8 @@ export default {
             }).then((data) => {
             // Result
             console.log(data)
-            //onLogin(this.$apollo.provider.defaultClient, data.data.login.token)
+            
+            onLogin(this.$apollo.provider.defaultClient, data.data.signIn.token)
             this.$router.push('./Index')
             }).catch((error) => {
             console.error(error)

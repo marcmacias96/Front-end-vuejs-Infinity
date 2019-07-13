@@ -116,7 +116,7 @@ export default {
             description: this.description,
             file: this.file
           },
-          usr_id: "5d262f4eef7d85219caaecc4"
+          usr_id: this.getMe._id
         },
         updateQueries : {
           getImages :  (previousResult, { mutationResult }) => {
@@ -162,6 +162,19 @@ export default {
           }
         }]
       };
+    },
+    getMe () {
+      return {
+        query : gql`
+        query getMe {
+          getMe {
+            _id
+            email
+          }
+        }
+        `,
+        fetchPolicy: "cache-and-network"
+      }
     }
   }
 };
