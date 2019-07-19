@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark shadow-sm">navbar 
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark shadow-sm">
       <div class="container">
-        <router-link to="/index"> <strong>Red Social</strong></router-link> 
+        <router-link to="/index"> <strong> ∞INFINITY ∞</strong></router-link> 
         <button
           class="navbar-toggler"
           type="button"
@@ -50,5 +50,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+ background:#8ba987 url( http://i0.wp.com/wallpaperstock.net/digital-infinity-wallpapers_7472_1280x960.jpg)  no-repeat;
+        background-size: cover;
+        background-position: center right; width: 100%; height: 200vh; 
 }
 </style>

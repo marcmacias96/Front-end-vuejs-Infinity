@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-header bg-dark">
         <h3 class="card-title text-white">
-          <i class="far fa-image"></i> Upload an Image
+          <i class="far fa-image"></i> SUBIR UNA IMAGEN
         </h3>
       </div>
 
@@ -21,7 +21,7 @@
                   id="image"
                   required
                 />
-                <label class="custom-file-label" for="image">Choose file</label>
+                <label class="custom-file-label" for="image">Elija el Archivo</label>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
               name="title"
               class="form-control"
               v-model="title"
-              placeholder="Title for the Image"
+              placeholder="Titulo de la Imagen"
               required
             />
           </div>
@@ -42,13 +42,13 @@
               rows="2"
               class="form-control"
               v-model="description"
-              placeholder="Deescription for the Image"
+              placeholder="Descripción de la imagen"
               required
             ></textarea>
           </div>
           <div class="form-group">
             <button class="btn btn-success">
-              <i class="fa fa-upload"></i> Upload Image
+              <i class="fa fa-upload"></i> Subir Imagen
             </button>
           </div>
         </form>
@@ -57,7 +57,7 @@
       <div class="card mt-2">
         <div class="car-header bg-dark text-white">
           <h3>
-            <i class="far fa-images">Recient Upload</i>
+            <i class="far fa-images">FOTOS RECIENTES</i>
           </h3>
         </div>
         <div class="card-body">

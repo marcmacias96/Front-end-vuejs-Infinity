@@ -27,7 +27,7 @@
             </h3>
           </div>
 
-          <div class="card-header d-flex justify-content-between align-items-center">
+          <div class="card-header d-flex justify-content-between align-items-center ">
             <h2>{{data.getImage.title}}</h2>
           </div>
 
@@ -46,7 +46,7 @@
           </div>
 
           <div class="card-header d-flex justify-content-between align-items-center">
-            <h3>Comments</h3>
+            <h3>Comentarios</h3>
           </div>
 
           <div class="card-body">
@@ -57,13 +57,13 @@
                     name="comment"
                     class="form-control"
                     rows="2"
-                    placeholder="Your Comment"
+                    placeholder="Escriba tu Comentario"
                     v-model="comment"
                   ></textarea>
                 </div>
                 <div class="form-group">
                   <button class="btn btn-success" id="btn-comment">
-                    <i class="fa fa-comment"></i> Post
+                    <i class="fa fa-comment"></i> Enviar
                   </button>
                 </div>
               </form>
