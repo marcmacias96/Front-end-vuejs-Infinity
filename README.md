@@ -1,5 +1,9 @@
 # front-end-infinity
 
+## Diagrama de arquitectura física
+![infraestructura](https://github.com/marcmacias96/Backend-Graphql-Apollo-Server-Infinity/blob/master/InfinityAPP%20-%20DIAGRAMA%20FISICO.png)
+
+
 ## Project setup
 ```
 npm install
